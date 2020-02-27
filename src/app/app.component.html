@@ -1,0 +1,9 @@
+<app-header (recipeLoaded)="onNavigation($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipe *ngIf="recipeShow"></app-recipe>
+      <app-shoping-list *ngIf="!recipeShow"></app-shoping-list>
+    </div>
+  </div>
+</div>
